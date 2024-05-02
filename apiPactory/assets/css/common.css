@@ -20,7 +20,7 @@
     height: 50px;
     margin-left: 45px;
     margin-right: 10px;
-    background: url("https://raw.githubusercontent.com/jaehyuk-lee-0712/apiProject/main/logo.png");
+    background: url("../img/logo2.png") center / cover;
 }
 
 #title {
