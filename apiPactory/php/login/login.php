@@ -22,7 +22,7 @@
             <div id="logos">
                 <div id="logo"></div>
                 <div id="title">
-                    <h2><a href="http://meowon1019.dothome.co.kr/">apiPactory</a></h2>
+                    <h2><a href="/">apiPactory</a></h2>
                 </div>
                 <div id="menu">
                     <ul>
@@ -62,27 +62,27 @@
                     <input type="submit" value="로그인">
                 </form>
 
-                <form id="signInForm">
+                <form id="signInForm" action="signUpForm.php" name="signUpForm" method="post">
                     <div class="Check">
-                        <input type="text" id="youID"  name="youID">
-                        <label for="youID" >아이디</label>
-                        <div class="btn" onclick="IDChecking()">아이디 중복검사</div>
+                        <input type="email" id="userEmail"  name="userEmail">
+                        <label for="userEmail" >이메일</label>
+                        <div class="btn" onclick="IDChecking()">이메일 중복검사</div>
                     </div>
                     <div class="Check">
-                        <input type="text" id="youName"  name="youName">
-                        <label for="youName" >이름</label>
+                        <input type="text" id="userName"  name="userName">
+                        <label for="userName" >이름</label>
                     </div>
                     <div class="Check">
-                        <input type="password" id="youPass"  name="youPass">
-                        <label for="youName" >비밀번호</label>
+                        <input type="password" id="userPass"  name="userPass">
+                        <label for="userPass" >비밀번호</label>
                     </div>
                     <div class="Check">
-                        <input type="password" id="youPassC"  name="youPassC">
-                        <label for="youName" >확인</label>
+                        <input type="password" id="userPassC"  name="userPassC">
+                        <label for="userPassC" >확인</label>
                     </div>
                     <div class="Check">
-                        <input type="text" id="youPhone"  name="youPhone">
-                        <label for="youName" >전화번호</label>
+                        <input type="text" id="userPhone"  name="userPhone">
+                        <label for="userPhone" >전화번호</label>
                     </div>
                     <input type="submit"value="다음">
                 </form>
@@ -113,6 +113,7 @@
                 
                 // 로그인과 회원가입 폼 중에서 로그인 폼을 먼저 보여줍니다.
                 tabContents[1].style.display = "none";
+                tabContents[0].style.display = "block";
 
                 tabBtns.forEach(function (tabBtn, index) {
                     tabBtn.addEventListener("click", function () {

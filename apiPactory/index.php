@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 </head>
 
+<?php
+    include "php/connection/connection.php";
+?>
+
 <body>
     <header id="header">
         <div id="logos">
@@ -30,11 +34,29 @@
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="검색어를 입력하세요" class="search-input">
             </div>
-            <div id="profile">
-                <a href="php/login/login.php">로그인</a>
-            </div>
+<?php
+    if(isset($_SESSION['userID'])) {
+?>            
+        <a href="php/login/logOutAction.php">로그아웃</a>
+<?php
+    }else {
+?>
+        <a href="php/login/login.php">로그인</a>
+        <a href="#">회원가입</a>
+<?php
+    }
+?>
+
+
+            <!-- <div id="profile">
+            </div> -->
         </div>
     </header>
+    <!-- <?php
+
+        include "php/component/header.php";
+
+    ?> -->
     <main id="main">
         <div class="main-container">
             <div class="content1">
@@ -49,13 +71,13 @@
                     </ul>
                 </div>
                 <div class="main-icon">
-                    <img src="../assets/img/face.png" alt="이미지">
-                    <img src="../assets/img/face.png" alt="이미지">
-                    <img src="../assets/img/face.png" alt="이미지">
-                    <img src="../assets/img/face.png" alt="이미지">
-                    <img src="../assets/img/face.png" alt="이미지">
+                    <img src="assets/img/banner1.jpg" alt="이미지">
+                    <img src="assets/img/banner2.jpg" alt="이미지">
+                    <img src="assets/img/banner3.jpg" alt="이미지">
+                    <img src="assets/img/banner4.jpg" alt="이미지">
+                    <img src="assets/img/banner5.jpg" alt="이미지">
                 </div>
-                <div class="btn"><a href="#">컬렉션보기</a></div>
+                <div class="main-btn"><a href="#">컬렉션보기</a></div>
             </div>
             <div class="content2">
                 <div class="category-title">
@@ -81,11 +103,11 @@
                 <div class="apibanner">
                     <ul>
                         <li>
-                            <a href="#"><img src="../assets/img/css3.png" alt="이미지"><span>구글지도 api</span></a>
-                            <a href="#"><img src="../assets/img/blog.png" alt="이미지"><span>뉴스 api</span></a>
-                            <a href="#"><img src="../assets/img/Effect.png" alt="이미지"><span>은행 api</span></a>
-                            <a href="#"><img src="../assets/img/wallpaper.jpg" alt="이미지"><span>기상청 api</span></a>
-                            <a href="#"><img src="../assets/img/Html5.png" alt="이미지"><span>쇼핑 api</span></a>
+                            <a href="#"><img src="assets/img/notice1.jpg" alt="이미지"><span>구글지도 api</span></a>
+                            <a href="#"><img src="assets/img/notice2.jpg" alt="이미지"><span>뉴스 api</span></a>
+                            <a href="#"><img src="assets/img/notice3.jpg" alt="이미지"><span>은행 api</span></a>
+                            <a href="#"><img src="assets/img/notice4.jpg" alt="이미지"><span>기상청 api</span></a>
+                            <a href="#"><img src="assets/img/notice5.jpg" alt="이미지"><span>쇼핑 api</span></a>
                         </li>
                     </ul>
                 </div>
