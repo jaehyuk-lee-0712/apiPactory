@@ -1,8 +1,8 @@
 :root {
     --fontI: "IBM Plex Sans";
-    --fontP: "Poppins";
+    --fontT: "Noto Sans KR", sans-serif;
 
-    --mainColor: #eeeeee;
+    --mainwhiteColor: #f1e9e9;
     --pointColor: #da4242;
     --white: #fff;
     --white100: #fff;
