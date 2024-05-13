@@ -42,27 +42,61 @@
         </header>
 
         
-        <div class="wrapper fadeInDown">
-            <div id="formContent">
+        <div>
+           
                 <!-- Tabs Titles -->             
-                <h2 class="underlineHover" class="active"> 로그인 </h2>
-                <h2 class="underlineHover"> 회원가입 </h2>
+             
 
               
 
                 <!-- Icon -->
-                <div class="fadeIn first">
-                    <img src="../../../assets/img/logo2.png" id="icon" alt="User Icon" />
-                </div>
+                
 
                 <!-- Login Form -->
                 <form action="loginAction.php" name="loginAction" method="post" id="logInForm">
-                    <input type="text" id="userEmail" name="userEmail" placeholder="이메일을 입력하세요.">
-                    <input type="password" id="userPass" name="userPass" placeholder="비밀번호를 입력하세요.">
-                    <input type="submit" value="로그인">
+                <article id="main">
+            <div class="container">
+                <div class="login">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#">LOGIN</a></li>
+                        </ul>
+                    </div>
+                    <div class="idbox">
+                        <div>
+                            <input type="email" name="userID" id="userID" placeholder="UserEmail" autocomplete="off"
+                                class="input-style" required>
+                        </div>
+                    </div>
+                    <div class="passbox">
+                        <div>
+                            <input type="password" name="userPass" id="userPass" placeholder="UserPassword"
+                                autocomplete="off" class="input-style" required>
+                        </div>
+                    </div>
+                    <div class="forget">
+                        <ul>
+                            <li>
+                                <a href="#">Forget?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="signup">
+                        <ul>
+                            <li><a href="#">Signup</a></li>
+                        </ul>
+                    </div>
+                    <div class="confirm">
+                        <ul>
+                            <li><a href="#">LOGIN</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>       
                 </form>
 
-                <form id="signInForm" action="signUpForm.php" name="signUpForm" method="post">
+                <!-- <form id="signInForm" action="signUpForm.php" name="signUpForm" method="post">
                     <div class="Check">
                         <input type="email" id="userEmail"  name="userEmail">
                         <label for="userEmail" >이메일</label>
@@ -85,7 +119,7 @@
                         <label for="userPhone" >전화번호</label>
                     </div>
                     <input type="submit"value="다음">
-                </form>
+                </form> -->
 
                 <!-- Remind Passowrd -->
                 <div id="formFooter">

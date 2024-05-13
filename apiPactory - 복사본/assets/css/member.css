@@ -17,6 +17,7 @@
     font-family: var(--fontT);
 }
 
+
 /* login start */
 #wrap {
     width: 100%;
@@ -97,6 +98,8 @@ input[type=reset] {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    margin-top: 80px;
+
 }
 
 input[type=button]:hover,
@@ -116,7 +119,8 @@ input[type=reset]:active {
 }
 
 input[type=text],
-input[type=password] {
+input[type=password],
+input[type=email] {
     font-family: var(--fontT);
     font-weight: 400;
     background-color: #f6f6f6;
@@ -125,10 +129,8 @@ input[type=password] {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 5px;
-    width: 85%;
+    width: 100%;
     border: 2px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -137,6 +139,16 @@ input[type=password] {
     transition: all 0.5s ease-in-out;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
+}
+
+#logInForm {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#logInForm input[type=text],
+input[type=password] {
+    margin-bottom: 10px;
 }
 
 input[type=text]:focus {
@@ -298,9 +310,74 @@ input[type=password]:placeholder {
 }
 
 #icon {
-    width: 60%;
+    max-width: 300px;
 }
 
 * {
     box-sizing: border-box;
+}
+
+.btn {
+    width: 50%;
+    font-family: var(--fontT);
+    font-weight: 600;
+    background-color: #56BAED;
+    color: white;
+    padding: 18px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+    border-radius: 5px 5px 5px 5px;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+/* form config */
+
+#signInForm .Check {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 0 30px;
+}
+
+#signInForm .Check:nth-child(1) {
+    width: 100%;
+    display: flex;
+}
+
+#signInForm .Check input[type="text"] {
+    outline: none;
+}
+
+#signInForm .Check label {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    padding: 0 10px;
+    color: #cccccc;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: #f6f6f6;
+    transition: all .15s;
+    pointer-events: none;
+    border-radius: 5px;
+
+}
+
+#signInForm .Check input[type="text"]:focus+label,
+#signInForm .Check input[type="password"]:focus+label,
+#signInForm .Check input[type="email"]:focus+label,
+#signInForm .Check.existence label {
+    color: var(--black);
+    transform: translateY(-70%);
+    background-color: #fff;
+
 }
