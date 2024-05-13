@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    font-family: var(--fontT);
+    font-family: var(--fontN);
     font-weight: 700;
 }
 
@@ -31,8 +31,8 @@
 
 #title h2 a {
     font-size: 1.125rem;
-    font-family: var(--fontT);
-    font-weight: 800;
+    font-family: var(--fontN);
+    font-weight: 900;
 }
 
 #menu {
@@ -51,8 +51,8 @@
 
 #menu ul>li>a {
     font-size: 1rem;
-    font-weight: 500;
-    font-family: var(--fontT);
+    font-weight: 700;
+    font-family: var(--fontN);
 }
 
 #controller {
@@ -109,9 +109,11 @@
 }
 
 #controller a {
+    width: 60px;
     margin-left: 30px;
-    font-family: var(--fontT);
-    font-weight: 500;
+    font-family: var(--fontN);
+    font-weight: 700;
+    font-size: 12px;
 }
 
 /* header end */
@@ -168,7 +170,7 @@
 
 #ftitle h2 a {
     font-weight: 700;
-    font-family: var(--fontT);
+    font-family: var(--fontN);
 }
 
 #contact {
@@ -196,7 +198,7 @@
 #contact ul li a {
     display: inline-block;
     font-weight: 600;
-    font-family: var(--fontT);
+    font-family: var(--fontN);
     line-height: 2;
 }
 
